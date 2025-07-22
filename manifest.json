@@ -8,12 +8,7 @@
   "icons": [
     {
       "src": "imgs/passaro.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "imgs/passaro.png",
-      "sizes": "512x512",
+      "sizes": "107x77",
       "type": "image/png"
     }
   ]
