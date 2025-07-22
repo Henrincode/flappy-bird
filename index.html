@@ -24,6 +24,14 @@
     <div wm-flappy></div>
 
     <script src="./js/flappy.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(() => console.log('SW ativo!'))
+                .catch(console.error);
+        }
+    </script>
+
 </body>
 
 </html>
