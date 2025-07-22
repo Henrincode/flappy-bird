@@ -19,18 +19,11 @@
 </head>
 
 <body class="conteudo">
-    <h1>Flappy Bird</h1>
+    <h1>Flappy-Bird</h1>
     <!-- Div principal que representa a área do jogo Flappy -->
     <div wm-flappy></div>
 
     <script src="./js/flappy.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js')
-                .then(() => console.log('SW ativo!'))
-                .catch(console.error);
-        }
-    </script>
 
 </body>
 
