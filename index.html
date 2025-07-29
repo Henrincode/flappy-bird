@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/flappy.css">
-    <link rel="icon" href="./imgs/passaro.png" sizes="107x77" type="image/png">
 
-    <!-- Transforma em APP -->
-    <link rel="manifest" href="./manifest.json" />
-    <meta name="theme-color" content="#0D262D">
+    <!-- Ícones da aplicação (favicon e iOS) -->
+    <link rel="icon" href="./icons/192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="./icons/apple-icon-180.png">
+
+    <!-- Manifesto PWA -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Meta tags para Android e iOS -->
+    <meta name="theme-color" content="#caf0f8">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -22,6 +27,15 @@
     <h1>Flappy-Bird</h1>
     <!-- Div principal que representa a área do jogo Flappy -->
     <div wm-flappy></div>
+
+    <script>
+        // Registro do service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(() => console.log('✅ Service Worker registrado'))
+                .catch(err => console.error('❌ Erro ao registrar SW:', err));
+        }
+    </script>
 
     <script src="./js/flappy.js"></script>
 

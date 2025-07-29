@@ -1,14 +1,17 @@
 {
-  "name": "Flappy Bird",
-  "short_name": "FlappyBird",
+  "name": "Flappy-Bird",
+  "short_name": "Flappy-Bird",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0D262D",
   "theme_color": "#0D262D",
   "icons": [
+    { "src": "./icons/192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/512.png", "sizes": "512x512", "type": "image/png" },
     {
-      "src": "imgs/passaro.png",
-      "sizes": "107x77",
+      "src": "./icons/apple-icon-180.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ]
